@@ -126,7 +126,7 @@ input[type=submit]:hover {
 }
 
 .navbar_right {
-    float: left;
+    float: right;
 }
 
 .navbar a {
