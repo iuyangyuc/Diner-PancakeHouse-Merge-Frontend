@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Diner</title>
+    <title>Lunch</title>
     <link href="diner.css" rel="stylesheet"/>
   </head>
 
@@ -13,14 +13,14 @@
       <a href="index.html">All Menu</a>
       <div class="navbar_right">
           <a href="pancakehouse.html">Breakfast</a>
-          <a href="lunch.html">Lunch</a>
-          <a href="diner.html" class="active">Dinner</a>
+          <a href="lunch.html" class="active">Lunch</a>
+          <a href="diner.html">Dinner</a>
           <a href="vegetarian.html">Vegetarian</a>
       </div>
     </div>
 
     <div id="menu" class="container">
-        <h1>Diner Menu</h1>
+        <h1>Lunch Menu</h1>
     </div>
 
     <script>
@@ -30,7 +30,7 @@
       displayTheMenu();
 
       async function getTheMenu() {
-        let response = await fetch(host + "/merger/supper");
+        let response = await fetch(host + "/merger/lunch");
         let menu = await response.json();
         return menu;
       }
